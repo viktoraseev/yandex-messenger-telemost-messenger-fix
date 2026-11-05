@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Messenger links → Better Messenger",
+  "version": "2.0.0",
+  "description": "Opens messenger.360.yandex.ru chat links in desktop Yandex Messenger via Better Messenger instead of Telemost.",
+  "content_scripts": [
+    {
+      "matches": ["https://messenger.360.yandex.ru/*"],
+      "js": ["src/open-in-desktop.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
